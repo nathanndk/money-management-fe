@@ -1,7 +1,8 @@
 "use client";
+
 import { useEffect, useMemo, useState } from "react";
 import { useSession } from "next-auth/react";
-import { useTxStore } from "@/store/transactions";
+import { useTxStore } from "@/app/store/transactions";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";

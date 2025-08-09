@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useSession, signIn, signOut } from 'next-auth/react';
 import { ThemeToggle } from './theme-toggle';
 import { Button } from './ui/button';
-import { useTxStore } from '@/store/transactions';
+import { useTxStore } from '@/app/store/transactions';
 
 export function Navbar() {
   const { data: session } = useSession();

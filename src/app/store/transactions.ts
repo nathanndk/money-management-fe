@@ -1,6 +1,6 @@
 'use client';
 import { create } from 'zustand';
-import { Transaction } from '@/types/finance';
+import { Transaction } from '@/app/types/finance';
 
 const NS = 'mm';
 const keyFor = (profile: string) => `${NS}:profile:${profile}`;
