@@ -1,7 +1,7 @@
 import "isomorphic-fetch";
 import { Actor, HttpAgent } from "@dfinity/agent";
 import type { Principal } from "@dfinity/principal";
-import { idlFactory } from "@/ic/echo.did";
+import { idlFactory } from "@/app/ic/echo.did";
 
 const ICP_HOST = process.env.ICP_HOST || "https://icp-api.io";
 const ICP_CANISTER_ID = process.env.ICP_CANISTER_ID; // required for live

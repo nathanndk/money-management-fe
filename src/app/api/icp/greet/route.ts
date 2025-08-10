@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { createEchoActor, echoDummy } from "@/lib/icp";
+import { createEchoActor, echoDummy } from "@/app/lib/icp";
 
 const Body = z.object({ name: z.string().min(1) });
 

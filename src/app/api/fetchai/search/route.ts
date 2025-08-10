@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { agentverseSearch } from "@/lib/fetchai";
+import { agentverseSearch } from "@/app/lib/fetchai";
 
 export async function GET(req: Request) {
   const { searchParams } = new URL(req.url);

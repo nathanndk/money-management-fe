@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/navbar";
-import { SessionProvider } from "next-auth/react";
+import { AuthProvider } from "@/components/providers/auth-providers";
 
 export const metadata: Metadata = {
   title: "Money Manager + ICP + Fetch.ai",
@@ -18,12 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body>
-        <SessionProvider>
+        <AuthProvider>
           <ThemeProvider>
             <Navbar />
             <main className="mx-auto max-w-5xl px-4 py-6">{children}</main>
           </ThemeProvider>
-        </SessionProvider>
+        </AuthProvider>
       </body>
     </html>
   );

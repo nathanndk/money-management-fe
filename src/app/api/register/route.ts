@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { z } from 'zod';
-import { volatileUsers } from '@/data/runtime';
+import { volatileUsers } from '@/app/data/runtime';
 
 const schema = z.object({ name: z.string().min(2), email: z.string().email(), password: z.string().min(4) });
 

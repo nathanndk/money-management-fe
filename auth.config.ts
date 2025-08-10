@@ -1,8 +1,8 @@
 import type { NextAuthConfig } from "next-auth";
 import Credentials from "next-auth/providers/credentials";
 import { z } from "zod";
-import { mockUsers } from "@/data/mock";
-import { volatileUsers } from "@/data/runtime";
+import { mockUsers } from "@/app/data/mock";
+import { volatileUsers } from "@/app/data/runtime";
 
 export const authConfig = {
   providers: [

@@ -1,4 +1,4 @@
-import { OverviewCards, Transaction } from '@/types/finance';
+import { OverviewCards, Transaction } from '@/app/types/finance';
 
 export const mockUsers = [
   { id: 'u_demo', name: 'Demo User', email: 'demo@local.test', password: 'demo1234' }
